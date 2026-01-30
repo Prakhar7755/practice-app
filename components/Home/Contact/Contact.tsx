@@ -1,10 +1,10 @@
 import React from "react";
 import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
-import {  FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="p-16" id="contact">
+    <section className="p-16" id="contact">
       <div className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ">
         {/* TEXT CONTENT */}
         <div className="">
@@ -17,7 +17,7 @@ const Contact = () => {
             achieve your goals
           </p>
 
-          <div className="mt-7">
+          <address className="mt-7 not-italic">
             <div className="flex items-center space-x-3 mb-4 ">
               <BiPhone className="w-9 h-9 text-cyan-300 " />
               <p className="text-xl font-bold text-gray-400">0438032040923</p>
@@ -32,7 +32,7 @@ const Contact = () => {
                 Raebareli, Uttar Pradesh, India
               </p>
             </div>
-          </div>
+          </address>
 
           {/* social icons */}
           <div className="flex items-center mt-8 space-x-3">
@@ -49,9 +49,12 @@ const Contact = () => {
         </div>
 
         {/* FORM */}
-        <div   data-aos="zoom-in"
+        <form
+          data-aos="zoom-in"
           data-aos-anchor-placement="top-center"
-          data-aos-delay="0" className="md:p-7 p-3 bg-[#131332] rounded-lg space-y-5">
+          data-aos-delay="0"
+          className="md:p-7 p-3 bg-[#131332] rounded-lg space-y-5"
+        >
           <input
             type="text"
             placeholder="Name"
@@ -75,10 +78,12 @@ const Contact = () => {
             className="p-4 bg-[#363659] text-white rounded-md w-full placeholder:text-white/70 h-50"
           ></textarea>
 
-          <button className="px-12 py-4 bg-blue-950 hover:bg-blue-900 transition-all duration-300 cursor-pointer text-white rounded-full">Send Message</button>
-        </div>
+          <button className="px-12 py-4 bg-blue-950 hover:bg-blue-900 transition-all duration-300 cursor-pointer text-white rounded-full">
+            Send Message
+          </button>
+        </form>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -25,7 +25,7 @@ const responsive = {
 
 const ClientReview = () => {
   return (
-    <div className="p-16" id="client">
+    <section className="p-16" id="client">
       <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white ">
         Kind words from satisfied <span className="text-cyan-200">clients</span>
       </h1>
@@ -65,7 +65,7 @@ const ClientReview = () => {
           />
         </Carousel>
       </div>
-    </div>
+    </section>
   );
 };
 

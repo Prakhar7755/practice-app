@@ -21,7 +21,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="text-white p-16" id="skills">
+    <section className="text-white p-16" id="skills">
       <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
         My <span className="text-cyan-300">Skills</span>
       </h1>
@@ -43,9 +43,9 @@ const Skills = () => {
               </div>
             </Tilt>
           );
-        })}
+        })}hey Gemini, go inside the components folder and look at each tsx component, now i most used normal div and p tags instead of using the correct semantic tags, can you update the code with semantic tags, without breaking the existing code or styling
       </div>
-    </div>
+    </section>
   );
 };
 

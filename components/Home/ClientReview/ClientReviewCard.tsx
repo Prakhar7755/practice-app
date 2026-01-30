@@ -9,7 +9,7 @@ type ClientReviewCardProps = {
 
 const ClientReviewCard = ({ image, name, role }: ClientReviewCardProps) => {
   return (
-    <div className="m-2">
+    <article className="m-2">
       <Image
         src={image}
         alt="client"
@@ -25,7 +25,7 @@ const ClientReviewCard = ({ image, name, role }: ClientReviewCardProps) => {
 
       <h1 className="mt-6 text-xl font-bold text-cyan-200">{name}</h1>
       <p className="mt-1 text-white">{role}</p>
-    </div>
+    </article>
   );
 };
 

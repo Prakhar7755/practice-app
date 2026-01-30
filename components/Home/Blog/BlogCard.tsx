@@ -8,7 +8,7 @@ type BlogCardProps = {
 
 const BlogCard = ({ image, title }: BlogCardProps) => {
   return (
-    <div className="">
+    <article className="">
       <Image
         src={image}
         alt="blog_image"
@@ -34,7 +34,7 @@ const BlogCard = ({ image, title }: BlogCardProps) => {
           TailwindCSS
         </p>
       </div>
-    </div>
+    </article>
   );
 };
 

@@ -2,7 +2,7 @@ import BlogCard from "./BlogCard";
 
 const Blog = () => {
   return (
-    <div className="p-16"  id="blog">
+    <section className="p-16" id="blog">
       <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white ">
         My latest <span className="text-cyan-200">Blog</span>
       </h1>
@@ -38,7 +38,7 @@ const Blog = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

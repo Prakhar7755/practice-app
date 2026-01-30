@@ -6,7 +6,10 @@ import ParticlesHero from "./ParticleBackground";
 
 const Hero = () => {
   return (
-    <div id="home" className="text-white relative h-screen flex items-center justify-center overflow-hidden flex-col">
+    <section
+      id="home"
+      className="text-white relative h-screen flex items-center justify-center overflow-hidden flex-col"
+    >
       <ParticlesHero />
 
       <div className="relative z-10 flex flex-col items-center justify-center">
@@ -28,8 +31,11 @@ const Hero = () => {
           <br /> brands <span className="text-cyan-200"> and experiences</span>
         </h1>
 
-        <h2 className="mt-5 text-sm px-2 text-center sm:text-2xl font-medium items-center flex "  data-aos="fade-up"
-          data-aos-delay="400">
+        <h2
+          className="mt-5 text-sm px-2 text-center sm:text-2xl font-medium items-center flex "
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           Hi, I&apos;m Prakhar- A Passionate
           <span className="text-cyan-200 font-bold">
             <Typewriter
@@ -49,13 +55,16 @@ const Hero = () => {
           </span>
         </h2>
 
-        <button  data-aos="fade-up"
-          data-aos-delay="600" className="mt-6 px-10 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-lg font-medium p-1">
+        <button
+          data-aos="fade-up"
+          data-aos-delay="600"
+          className="mt-6 px-10 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-lg font-medium p-1"
+        >
           <span>See my work</span>
           <BsArrowRight className="ml-2 inline-block w-5 h-5 " />
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
