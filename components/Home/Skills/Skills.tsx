@@ -43,7 +43,7 @@ const Skills = () => {
               </div>
             </Tilt>
           );
-        })}hey Gemini, go inside the components folder and look at each tsx component, now i most used normal div and p tags instead of using the correct semantic tags, can you update the code with semantic tags, without breaking the existing code or styling
+        })}
       </div>
     </section>
   );
