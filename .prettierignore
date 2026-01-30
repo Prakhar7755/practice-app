@@ -1,0 +1,21 @@
+# Ignore build output
+.next
+out
+dist
+
+# Ignore dependencies
+node_modules
+
+# Ignore lock files (optional, but usually you don’t want Prettier touching them)
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Ignore static files
+public
+
+# Optional: Ignore TypeScript generated files
+next-env.d.ts
+
+# Ignore coverage reports (if using testing)
+coverage

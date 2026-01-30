@@ -1,4 +1,3 @@
-import React from "react";
 import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
 import { FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 
