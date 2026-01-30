@@ -3,7 +3,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="p-16">
+    <div className="p-16" id="projects">
       <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
         A small selection of recent <br />{" "}
         <span className="text-cyan-200">Projects</span>

@@ -56,12 +56,16 @@ const Navbar = ({ openNav }: Props) => {
 
         {/* buttons */}
         <div className="flex items-center space-x-4">
-          <button className="p-3  md:px-8  md:py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center gap-3 ">
+          <a
+            href="/resume.pdf"
+            download
+            className="p-3 md:px-8 md:py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center gap-3"
+          >
             <BiDownload className="w-5 h-5" />
             <span className="hidden md:block">Download CV</span>
-          </button>
-          {/* Burger menu */}
+          </a>
 
+          {/* Burger menu */}
           <HiBars3BottomRight
             className="w-8 h-8 cursor-pointer text-white lg:hidden"
             onClick={openNav}

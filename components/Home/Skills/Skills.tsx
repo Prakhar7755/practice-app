@@ -21,7 +21,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="text-white p-16">
+    <div className="text-white p-16" id="skills">
       <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
         My <span className="text-cyan-300">Skills</span>
       </h1>
