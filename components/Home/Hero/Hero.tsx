@@ -3,6 +3,7 @@ import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 import Typewriter from "typewriter-effect";
 import ParticlesHero from "./ParticleBackground";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -27,8 +28,9 @@ const Hero = () => {
           data-aos-delay="200"
           className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 text-center font-bold tracking-wide"
         >
-          Creating web products,
-          <br /> brands <span className="text-cyan-200"> and experiences</span>
+          I Build Fast, Scalable &
+          <br />{" "}
+          <span className="text-cyan-200">Production-Ready Web Apps</span>
         </h1>
 
         <h2
@@ -41,9 +43,10 @@ const Hero = () => {
             <Typewriter
               options={{
                 strings: [
-                  " Frontend Developer",
-                  "Backend Developer",
-                  "Web Developer",
+                  " Full-Stack Developer",
+                  " Software Engineer",
+                  " React & Node.js Developer",
+                  " AI-Integrated Web Builder",
                 ],
                 autoStart: true,
                 loop: true,
@@ -55,14 +58,16 @@ const Hero = () => {
           </span>
         </h2>
 
-        <button
-          data-aos="fade-up"
-          data-aos-delay="600"
-          className="mt-6 px-10 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-lg font-medium p-1"
-        >
-          <span>See my work</span>
-          <BsArrowRight className="ml-2 inline-block w-5 h-5 " />
-        </button>
+        <Link href="/#projects">
+          <button
+            data-aos="fade-up"
+            data-aos-delay="600"
+            className="mt-6 px-10 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-lg font-medium p-1"
+          >
+            <span>Explore My Work</span>
+            <BsArrowRight className="ml-2 inline-block w-5 h-5 " />
+          </button>
+        </Link>
       </div>
     </section>
   );

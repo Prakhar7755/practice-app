@@ -2,18 +2,17 @@ import ServiceCard from "./ServiceCard";
 
 const Services = () => {
   return (
-    <section className="p-16" id="services">
+    <section className="p-16 px-0" id="services">
       <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
-        Collaborate with brand <br /> and agencies to create <br /> impactful
-        results
+        How I Build Production-Ready Applications
       </h1>
 
       <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 mt-20 items-center justify-center">
         <div data-aos="fade-right" data-aos-anchor-placement="top-center">
           <ServiceCard
             icon="/images/s1.png"
-            name="UI and UX"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, aliquam?"
+            name="Full-Stack Web Development"
+            description="Building scalable web apps with React, Node.js & PostgreSQL, focused on performance and clean architecture."
           />
         </div>
         <div
@@ -23,8 +22,8 @@ const Services = () => {
         >
           <ServiceCard
             icon="/images/s2.png"
-            name="Web and Mobile App"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, aliquam?"
+            name="Backend & API Engineering"
+            description="Designing RESTful APIs, authentication systems (JWT/OAuth), and optimized database queries with Prisma, MongoDB, and PostgreSQL."
           />
         </div>
         <div
@@ -34,8 +33,8 @@ const Services = () => {
         >
           <ServiceCard
             icon="/images/s3.png"
-            name="Design & Creative"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, aliquam?"
+            name="Scalable Systems & Performance"
+            description="Improving load times, handling concurrent requests, implementing Redis caching, and optimizing query performance for high-traffic applications."
           />
         </div>
         <div
@@ -45,8 +44,8 @@ const Services = () => {
         >
           <ServiceCard
             icon="/images/s4.png"
-            name="Development"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, aliquam?"
+            name="Deployment & DevOps"
+            description="Containerizing applications with Docker, setting up CI/CD pipelines via GitHub Actions, and deploying on Render & Vercel."
           />
         </div>
       </div>
