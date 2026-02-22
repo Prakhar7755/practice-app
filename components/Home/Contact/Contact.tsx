@@ -1,9 +1,9 @@
 import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
-import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section className="p-16" id="contact">
+    <section className="md:p-16 pb-5" id="contact">
       <div className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* LEFT SIDE - CONTACT INFO */}
         <div>

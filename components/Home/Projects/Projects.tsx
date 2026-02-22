@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Projects = () => {
   return (
-    <section className="p-16" id="projects">
+    <section className="md:p-16 pb-5" id="projects">
       <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
         A small selection of recent <br />{" "}
         <span className="text-cyan-200">Projects</span>
@@ -33,7 +33,7 @@ const Projects = () => {
         <a href="https://online-code-ide-mu83.onrender.com">
           <article
             data-aos="fade-up"
-            data-aos-delay="100"
+            data-aos-delay="50"
             data-aos-anchor-placement="top-center"
           >
             <Image
@@ -54,7 +54,7 @@ const Projects = () => {
         <a href="https://gemini-website-generator.vercel.app">
           <article
             data-aos="fade-up"
-            data-aos-delay="200"
+            data-aos-delay="100"
             data-aos-anchor-placement="top-center"
           >
             <Image
@@ -76,7 +76,7 @@ const Projects = () => {
         <a href="https://quick-task-python-service.onrender.com">
           <article
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="150"
             data-aos-anchor-placement="top-center"
           >
             <Image
