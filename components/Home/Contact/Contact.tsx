@@ -3,75 +3,104 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section className="md:p-16 pb-5" id="contact">
-      <div className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+    <section className="py-20 px-4" id="contact">
+      <div className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* LEFT SIDE - CONTACT INFO */}
-        <div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-200">
-            Let’s build something great together
+        <div data-aos="fade-up">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+            Let&apos;s build something{" "}
+            <span className="gradient-text">great together</span>
           </h1>
 
-          <p className="text-gray-400 mt-6 text-base sm:text-lg">
-            I’m always open to discussing new projects, creative ideas, or
+          <p className="text-gray-400 mt-6 text-base sm:text-lg leading-relaxed">
+            I&apos;m always open to discussing new projects, creative ideas, or
             opportunities to be part of your vision.
           </p>
 
-          <address className="mt-7 not-italic">
-            <div className="flex items-center space-x-3 mb-4">
-              <BiPhone className="w-9 h-9 text-cyan-300" />
-              <p className="text-xl font-semibold text-gray-400">
+          <address className="mt-8 not-italic space-y-5">
+            <div className="flex items-center space-x-4 group">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/15 to-purple-500/15 flex items-center justify-center group-hover:from-cyan-500/25 group-hover:to-purple-500/25 transition-all duration-300">
+                <BiPhone className="w-6 h-6 text-cyan-300" />
+              </div>
+              <p className="text-lg font-medium text-gray-300 group-hover:text-white transition-colors duration-300">
                 +91 9315570781
               </p>
             </div>
 
-            <div className="flex items-center space-x-3 mb-4">
-              <BiEnvelope className="w-9 h-9 text-cyan-300" />
-              <p className="text-xl font-semibold text-gray-400">
-                prakhar.5779.aps3@gmail.com
+            <div className="flex items-center space-x-4 group">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/15 to-purple-500/15 flex items-center justify-center group-hover:from-cyan-500/25 group-hover:to-purple-500/25 transition-all duration-300">
+                <BiEnvelope className="w-6 h-6 text-cyan-300" />
+              </div>
+              <p className="text-lg font-medium text-gray-300 group-hover:text-white transition-colors duration-300">
+                prakhar.tech.developer@gmail.com
               </p>
             </div>
 
-            <div className="flex items-center space-x-3 mb-4">
-              <BiMap className="w-9 h-9 text-cyan-300" />
-              <p className="text-xl font-semibold text-gray-400">
+            <div className="flex items-center space-x-4 group">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/15 to-purple-500/15 flex items-center justify-center group-hover:from-cyan-500/25 group-hover:to-purple-500/25 transition-all duration-300">
+                <BiMap className="w-6 h-6 text-cyan-300" />
+              </div>
+              <p className="text-lg font-medium text-gray-300 group-hover:text-white transition-colors duration-300">
                 Raebareli, Uttar Pradesh, India
               </p>
             </div>
           </address>
 
           {/* Social Icons */}
-          <div className="flex items-center mt-8 space-x-3">
-            <a href="https://x.com/Prakhar_tech775" className="w-14 h-14 bg-blue-950/60 rounded-full flex items-center justify-center cursor-pointer hover:bg-black transition-all duration-300">
-              <FaTwitter className="text-white w-6 h-6" />
+          <div className="flex items-center mt-8 space-x-4">
+            <a
+              href="https://x.com/Prakhar_tech775"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon w-12 h-12 glass-card !rounded-full flex items-center justify-center cursor-pointer hover:!border-cyan-400/30"
+            >
+              <FaTwitter className="text-gray-400 w-5 h-5 hover:text-cyan-300 transition-colors" />
             </a>
 
-            <a href="https://github.com/Prakhar7755" className="w-14 h-14 bg-blue-950/60 rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-600 transition-all duration-300">
-              <FaGithub className="text-white w-6 h-6" />
-            </a >
+            <a
+              href="https://github.com/Prakhar7755"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon w-12 h-12 glass-card !rounded-full flex items-center justify-center cursor-pointer hover:!border-purple-400/30"
+            >
+              <FaGithub className="text-gray-400 w-5 h-5 hover:text-purple-300 transition-colors" />
+            </a>
 
-            <a href="https://linkedin.com/in/prakhar-tech" className="w-14 h-14 bg-blue-950/60 rounded-full flex items-center justify-center cursor-pointer hover:bg-blue-800 transition-all duration-300">
-              <FaLinkedin className="text-white w-6 h-6" />
+            <a
+              href="https://linkedin.com/in/prakhar-tech"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon w-12 h-12 glass-card !rounded-full flex items-center justify-center cursor-pointer hover:!border-blue-400/30"
+            >
+              <FaLinkedin className="text-gray-400 w-5 h-5 hover:text-blue-300 transition-colors" />
             </a>
           </div>
         </div>
 
-        {/* RIGHT SIDE - FORM PLACEHOLDER */}
-        <div className="md:p-8 p-6 bg-[#131332] rounded-lg flex flex-col justify-center items-center text-center">
-          <h2 className="text-2xl font-bold text-white">
-            Contact Form Coming Soon
-          </h2>
+        {/* RIGHT SIDE - CONTACT PLACEHOLDER */}
+        <div data-aos="fade-up" data-aos-delay="150">
+          <div className="glass-card p-10 flex flex-col justify-center items-center text-center">
+            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-purple-500/20 flex items-center justify-center mb-6">
+              <BiEnvelope className="w-8 h-8 text-cyan-300" />
+            </div>
 
-          <p className="text-gray-400 mt-4">
-            I’m currently setting up a secure contact system. For now, feel free
-            to reach out directly via email.
-          </p>
+            <h2 className="text-2xl font-bold text-white">
+              Contact Form <span className="gradient-text">Coming Soon</span>
+            </h2>
 
-          <a
-            href="mailto:prakhar.5779.aps3@gmail.com"
-            className="mt-6 px-8 py-3 bg-blue-950 hover:bg-blue-900 transition-all duration-300 text-white rounded-full"
-          >
-            Email Me Directly
-          </a>
+            <p className="text-gray-400 mt-4 leading-relaxed">
+              I&apos;m currently setting up a secure contact system. For now, feel free
+              to reach out directly via email.
+            </p>
+
+            <a
+              href="mailto:prakhar.5779.aps3@gmail.com"
+              className="gradient-btn mt-8 px-8 py-3 text-white rounded-full font-medium inline-flex items-center gap-2"
+            >
+              <BiEnvelope className="w-5 h-5" />
+              Email Me Directly
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -79,40 +108,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-/* FORM */
-{
-  /* <form
-          data-aos="zoom-in"
-          data-aos-anchor-placement="top-center"
-          data-aos-delay="0"
-          className="md:p-7 p-3 bg-[#131332] rounded-lg space-y-5"
-        >
-          <input
-            type="text"
-            placeholder="Name"
-            className="p-4 bg-[#363659] text-white rounded-md w-full placeholder:text-white/70"
-          />
-          <input
-            type="email"
-            placeholder="Email Address"
-            className="p-4 bg-[#363659] text-white rounded-md w-full placeholder:text-white/70"
-          />
-          <input
-            type="text"
-            placeholder="Mobile Number"
-            className="p-4 bg-[#363659] text-white rounded-md w-full placeholder:text-white/70"
-          />
-
-          <textarea
-            name="message"
-            placeholder="Your Message ..."
-            id="message"
-            className="p-4 bg-[#363659] text-white rounded-md w-full placeholder:text-white/70 h-50"
-          ></textarea>
-
-          <button className="px-12 py-4 bg-blue-950 hover:bg-blue-900 transition-all duration-300 cursor-pointer text-white rounded-full">
-            Send Message
-          </button>
-        </form> */
-}

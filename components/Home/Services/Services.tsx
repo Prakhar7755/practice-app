@@ -2,13 +2,14 @@ import ServiceCard from "./ServiceCard";
 
 const Services = () => {
   return (
-    <section className="p-16 px-0" id="services">
+    <section className="py-20 px-4" id="services">
       <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
-        How I Build Production-Ready Applications
+        How I Build <span className="gradient-text">Production-Ready</span> Applications
       </h1>
+      <div className="section-divider" />
 
-      <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 mt-20 items-center justify-center">
-        <div data-aos="fade-right" data-aos-anchor-placement="top-center">
+      <div className="w-[90%] sm:w-[80%] lg:w-[75%] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mt-16 items-stretch">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center">
           <ServiceCard
             icon="/images/s1.png"
             name="Full-Stack Web Development"
@@ -16,7 +17,7 @@ const Services = () => {
           />
         </div>
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-anchor-placement="top-center"
           data-aos-delay="100"
         >
@@ -27,7 +28,7 @@ const Services = () => {
           />
         </div>
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-anchor-placement="top-center"
           data-aos-delay="200"
         >
@@ -38,7 +39,7 @@ const Services = () => {
           />
         </div>
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-anchor-placement="top-center"
           data-aos-delay="300"
         >

@@ -24,7 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${font.className} scrollbar-hide  antialiased bg-[#0d0d1f] `}
+        className={`${font.className} scrollbar-hide antialiased`}
+        style={{ background: 'linear-gradient(180deg, #09091b 0%, #0d0e26 40%, #0f0a2e 100%)' }}
       >
         <ResponsiveNav />
         {children}

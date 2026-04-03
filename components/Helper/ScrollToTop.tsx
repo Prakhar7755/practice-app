@@ -5,11 +5,9 @@ import { FaArrowUp } from "react-icons/fa";
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show button when page is scrolled down
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.pageYOffset > 300) {
-        // Show after 300px
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -21,22 +19,27 @@ const ScrollToTop = () => {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  // Scroll to top function
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Smooth scrolling
+      behavior: "smooth",
     });
   };
 
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-10 right-10 p-3 rounded-full bg-blue-950 text-white shadow-lg transition-opacity ${
-        isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
+      className={`fixed bottom-10 right-10 p-3 rounded-full text-white shadow-lg transition-all duration-500 cursor-pointer ${
+        isVisible
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 translate-y-4 pointer-events-none"
       }`}
+      style={{
+        background: 'linear-gradient(135deg, #1e40af, #6d28d9)',
+        boxShadow: isVisible ? '0 0 20px rgba(103, 232, 249, 0.2), 0 0 40px rgba(103, 232, 249, 0.1)' : 'none',
+      }}
     >
-      <FaArrowUp />
+      <FaArrowUp className="w-4 h-4" />
     </button>
   );
 };

@@ -22,13 +22,13 @@ export default function ParticlesHero() {
   }, []);
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
+    // particles loaded
   };
 
   const options: ISourceOptions = useMemo(
     () => ({
       background: {
-        color: { value: "transparent" }, // Transparent for overlay use
+        color: { value: "transparent" },
       },
       fullScreen: {
         enable: false,
@@ -45,27 +45,27 @@ export default function ParticlesHero() {
         },
       },
       particles: {
-        color: { value: "#ffffff" },
+        color: { value: ["#67e8f9", "#a78bfa", "#818cf8"] },
         links: {
-          color: "#ffffff",
+          color: "#67e8f9",
           distance: 150,
           enable: true,
-          opacity: 0.4,
+          opacity: 0.25,
           width: 1,
         },
         move: {
           direction: MoveDirection.none,
           enable: true,
           outModes: { default: OutMode.out },
-          speed: 2,
+          speed: 1.5,
         },
         number: {
           density: { enable: true, area: 800 },
-          value: 60,
+          value: 50,
         },
-        opacity: { value: 0.5 },
+        opacity: { value: { min: 0.2, max: 0.5 } },
         shape: { type: "circle" },
-        size: { value: { min: 1, max: 4 } },
+        size: { value: { min: 1, max: 3 } },
       },
       detectRetina: true,
     }),
@@ -79,7 +79,7 @@ export default function ParticlesHero() {
       id="tsparticles"
       particlesLoaded={particlesLoaded}
       options={options}
-      className="absolute inset-0 "
+      className="absolute inset-0"
     />
   );
 }

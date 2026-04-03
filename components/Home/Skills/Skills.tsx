@@ -57,10 +57,11 @@ const Skills = () => {
   return (
     <section className="text-white py-20 px-6 md:px-16" id="skills">
       <h1 className="text-center text-3xl md:text-4xl xl:text-5xl font-bold">
-        Technical <span className="text-cyan-300">Skills</span>
+        Technical <span className="gradient-text">Skills</span>
       </h1>
+      <div className="section-divider" />
 
-      <p className="text-center text-gray-400 mt-4 max-w-2xl mx-auto">
+      <p className="text-center text-gray-400 mt-6 max-w-2xl mx-auto">
         Technologies I use to design, build, and deploy scalable full-stack
         applications.
       </p>
@@ -68,8 +69,11 @@ const Skills = () => {
       <div className="mt-16 space-y-14">
         {skillCategories.map((category, index) => (
           <div key={category.title + index}>
-            <h2 className="text-xl md:text-2xl font-semibold text-cyan-200 mb-6 text-center">
-              {category.title}
+            <h2 className="text-xl md:text-2xl font-semibold text-center mb-8">
+              <span className="relative inline-block">
+                <span className="text-gray-200">{category.title}</span>
+                <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full" />
+              </span>
             </h2>
 
             <div className="flex flex-wrap justify-center gap-6">
@@ -78,10 +82,12 @@ const Skills = () => {
                   <div
                     data-aos="flip-right"
                     data-aos-delay={skillIndex * 100}
-                    className="bg-[#14134145] w-36 h-36 rounded-2xl flex flex-col items-center justify-center shadow-lg hover:scale-105 transition-all duration-300"
+                    className="glass-card w-36 h-36 flex flex-col items-center justify-center group cursor-default"
                   >
-                    <div className="text-4xl text-gray-300">{skill.icon}</div>
-                    <p className="text-sm text-gray-300 mt-3 text-center px-2">
+                    <div className="text-4xl text-gray-400 group-hover:text-cyan-300 transition-colors duration-300">
+                      {skill.icon}
+                    </div>
+                    <p className="text-sm text-gray-400 mt-3 text-center px-2 group-hover:text-gray-200 transition-colors duration-300">
                       {skill.name}
                     </p>
                   </div>

@@ -5,14 +5,15 @@ import { BiBadge } from "react-icons/bi";
 const Resume = () => {
   return (
     <section className="pt-20 pb-16" id="resume">
-      <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10 ">
+      <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-14">
         {/* Work Experience */}
         <div>
           <h1 className="text-3xl sm:text-4xl font-bold text-white">
-            Work <span className="text-cyan-200">Experience</span>
+            Work <span className="gradient-text">Experience</span>
           </h1>
+          <div className="section-divider !mx-0 !mt-4" />
 
-          <div className="mt-10" data-aos="zoom-in">
+          <div className="mt-10" data-aos="fade-up">
             <ResumeCard
               Icon={FaReact}
               role="Full-Stack Developer Intern – Akdenar Pvt. Ltd."
@@ -25,10 +26,11 @@ const Resume = () => {
         {/* Education */}
         <div>
           <h1 className="text-3xl sm:text-4xl font-bold text-white">
-            My <span className="text-cyan-200">Education</span>
+            My <span className="gradient-text">Education</span>
           </h1>
+          <div className="section-divider !mx-0 !mt-4" />
 
-          <div className="mt-10" data-aos="zoom-out">
+          <div className="mt-10 timeline-line" data-aos="fade-up" data-aos-delay="100">
             <ResumeCard
               Icon={BiBadge}
               role="B.Tech in Computer Science & Engineering"
