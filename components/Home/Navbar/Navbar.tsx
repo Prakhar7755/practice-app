@@ -61,7 +61,7 @@ const Navbar = ({ openNav }: Props) => {
         {/* buttons */}
         <div className="flex items-center space-x-4">
           <a
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/1j62gTPF5htKOQbeDOvBYVtE-QdYQ_AII/view?usp=drive_link"
             download
             className="gradient-btn p-3 md:px-8 md:py-3.5 text-sm cursor-pointer rounded-lg text-white flex items-center gap-3 font-medium"
           >
