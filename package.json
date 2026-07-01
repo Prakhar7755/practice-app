@@ -18,21 +18,21 @@
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "react-icons": "^5.5.0",
+    "react-icons": "^5.6.0",
     "react-multi-carousel": "^2.8.6",
-    "react-parallax-tilt": "^1.7.317",
+    "react-parallax-tilt": "^1.7.333",
     "typewriter-effect": "^2.22.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/aos": "^3.0.7",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
+    "@tailwindcss/postcss": "^4.3.2",
+    "@types/aos": "^3.0.8",
+    "@types/node": "^20.19.43",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.4",
     "eslint-config-next": "16.1.6",
-    "prettier": "^3.8.1",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "prettier": "^3.9.4",
+    "tailwindcss": "^4.3.2",
+    "typescript": "^5.9.3"
   }
 }

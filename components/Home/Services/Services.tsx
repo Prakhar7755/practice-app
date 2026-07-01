@@ -4,7 +4,8 @@ const Services = () => {
   return (
     <section className="py-20 px-4" id="services">
       <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
-        How I Build <span className="gradient-text">Production-Ready</span> Applications
+        How I Build <span className="gradient-text">Production-Ready</span>{" "}
+        Applications
       </h1>
       <div className="section-divider" />
 

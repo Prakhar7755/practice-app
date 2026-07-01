@@ -35,7 +35,7 @@ const Navbar = ({ openNav }: Props) => {
       <div className="flex items-center h-full justify-between w-[90%] mx-auto">
         {/* LOGO */}
         <div className="flex items-center space-x-2 group cursor-pointer">
-          <div className="w-10 h-10 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-full items-center justify-center flex shadow-lg group-hover:shadow-cyan-500/25 transition-all duration-300">
+          <div className="w-10 h-10 bg-linear-to-br from-cyan-400 to-purple-500 rounded-full items-center justify-center flex shadow-lg group-hover:shadow-cyan-500/25 transition-all duration-300">
             <FaCode className="h-6 w-6 text-white" />
           </div>
 
@@ -61,7 +61,7 @@ const Navbar = ({ openNav }: Props) => {
         {/* buttons */}
         <div className="flex items-center space-x-4">
           <a
-            href="https://drive.google.com/file/d/1j62gTPF5htKOQbeDOvBYVtE-QdYQ_AII/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1euRzCdQiWDXp8O4Cwcxt622wxcj0FIR2/view?usp=drive_link"
             download
             className="gradient-btn p-3 md:px-8 md:py-3.5 text-sm cursor-pointer rounded-lg text-white flex items-center gap-3 font-medium"
           >

@@ -8,8 +8,6 @@ import Services from "./Services/Services";
 import Resume from "./Resume/Resume";
 import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
-import ClientReview from "./ClientReview/ClientReview";
-import Blog from "./Blog/Blog";
 import Contact from "./Contact/Contact";
 
 const Home = () => {
@@ -37,8 +35,7 @@ const Home = () => {
       <Resume />
       <Projects />
       <Skills />
-      {/* <ClientReview /> */}
-      {/* <Blog /> */}
+      {/* ClientReview and Blog components intentionally omitted */}
       <Contact />
     </div>
   );

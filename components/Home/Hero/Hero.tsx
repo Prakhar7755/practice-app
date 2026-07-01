@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
-import Typewriter from "typewriter-effect";
 import ParticlesHero from "./ParticleBackground";
 import Link from "next/link";
 
@@ -20,7 +19,14 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col items-center justify-center">
         {/* Profile image with animated gradient ring */}
         <div className="relative animate-float" data-aos="fade-up">
-          <div className="absolute inset-[-6px] rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 opacity-70 blur-[2px]" style={{ animation: 'spin-slow 8s linear infinite', backgroundSize: '200% 200%', backgroundPosition: '0% 50%' }} />
+          <div
+            className="absolute inset-[-6px] rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 opacity-70 blur-[2px]"
+            style={{
+              animation: "spin-slow 8s linear infinite",
+              backgroundSize: "200% 200%",
+              backgroundPosition: "0% 50%",
+            }}
+          />
           <Image
             src={"/images/img2.jpeg"}
             alt={"Hero Image"}
@@ -45,24 +51,9 @@ const Hero = () => {
           data-aos="fade-up"
           data-aos-delay="400"
         >
-          Hi, I&apos;m Prakhar- A Passionate
-          <span className="text-cyan-300 font-bold">
-            <Typewriter
-              options={{
-                strings: [
-                  " Full-Stack Developer",
-                  " Software Engineer",
-                  " React & Node.js Developer",
-                  " AI-Integrated Web Builder",
-                ],
-                autoStart: true,
-                loop: true,
-                delay: 75,
-                deleteSpeed: 50,
-                wrapperClassName: "pl-2",
-              }}
-            />
-          </span>
+          Hi, I&apos;m Prakhar — a Full-Stack Developer specializing in React.js
+          and Node.js, building scalable web applications and AI-powered
+          systems.
         </h2>
 
         <Link href="/#projects">

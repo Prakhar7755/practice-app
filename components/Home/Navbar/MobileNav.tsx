@@ -21,9 +21,10 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
       <nav
         className={`text-white fixed flex flex-col items-center justify-center h-full transform transition-all duration-500 delay-200 w-[80%] sm:w-[60%] right-0 z-10005`}
         style={{
-          background: 'linear-gradient(135deg, rgba(9,9,27,0.95), rgba(15,10,46,0.95))',
-          backdropFilter: 'blur(20px)',
-          borderLeft: '1px solid rgba(103, 232, 249, 0.1)',
+          background:
+            "linear-gradient(135deg, rgba(9,9,27,0.95), rgba(15,10,46,0.95))",
+          backdropFilter: "blur(20px)",
+          borderLeft: "1px solid rgba(103, 232, 249, 0.1)",
         }}
       >
         {NavLinks.map((link, index) => (

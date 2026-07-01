@@ -15,7 +15,15 @@ import {
   SiGithubactions,
   SiTailwindcss,
   SiRedis,
+  SiShadcnui,
+  SiRedux,
+  SiJsonwebtokens,
+  SiApachekafka,
+  SiJenkins,
+  SiTerraform,
+  SiKubernetes,
 } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 
 const skillCategories = [
   {
@@ -26,6 +34,8 @@ const skillCategories = [
       { name: "JavaScript", icon: <SiJavascript /> },
       { name: "TypeScript", icon: <SiTypescript /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+      { name: "ShadCN UI", icon: <SiShadcnui /> },
+      { name: "Redux", icon: <SiRedux /> },
     ],
   },
   {
@@ -35,6 +45,20 @@ const skillCategories = [
       { name: "Express.js", icon: <SiExpress /> },
       { name: "Prisma ORM", icon: <SiPrisma /> },
       { name: "Redis", icon: <SiRedis /> },
+      { name: "JWT", icon: <SiJsonwebtokens /> },
+      { name: "Apache Kafka", icon: <SiApachekafka /> },
+    ],
+  },
+
+  {
+    title: "DevOps & Tools",
+    skills: [
+      { name: "AWS", icon: <FaAws /> },
+      { name: "Docker", icon: <SiDocker /> },
+      { name: "GitHub Actions", icon: <SiGithubactions /> },
+      { name: "Jenkins", icon: <SiJenkins /> },
+      { name: "Terraform", icon: <SiTerraform /> },
+      { name: "Kubernetes", icon: <SiKubernetes /> },
     ],
   },
   {
@@ -42,13 +66,6 @@ const skillCategories = [
     skills: [
       { name: "PostgreSQL", icon: <SiPostgresql /> },
       { name: "MongoDB", icon: <SiMongodb /> },
-    ],
-  },
-  {
-    title: "DevOps & Tools",
-    skills: [
-      { name: "Docker", icon: <SiDocker /> },
-      { name: "GitHub Actions", icon: <SiGithubactions /> },
     ],
   },
 ];

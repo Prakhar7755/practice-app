@@ -3,10 +3,18 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 const projects = [
   {
+    href: "#",
+    image: "/images/ai-cli.png",
+    title: "AI CLI Agent",
+    description:
+      "AI-powered CLI + web platform integrating Google Gemini via Vercel AI SDK; includes secure device-flow auth, persistent chat storage (Postgres + Prisma) and a Next.js dashboard.",
+  },
+  {
     href: "https://ai-stock-prediction-ml-service-1.onrender.com/health",
-    image: "/images/stock.png",
-    title: "AI Stock Predictor",
-    description: "A Web App that predicts future stock values based on past performance",
+    image: "/images/ai-web.jpeg",
+    title: "Microservice Stock Prediction",
+    description:
+      "Microservice-based stock price prediction system: Flask ML services + Express backend, React UI with dynamic charts, containerized via Docker and deployed on Render.",
   },
   {
     href: "https://online-code-ide-mu83.onrender.com",
@@ -14,17 +22,19 @@ const projects = [
     title: "Online Code IDE",
     description: "An Online Code Editor that supports 5+ Languages",
   },
-  {
-    href: "https://gemini-website-generator.vercel.app",
-    image: "/images/ai-web.png",
-    title: "AI Website Builder",
-    description: "An AI website builder that takes and generates webpage using Gemini API",
-  },
+  // {
+  //   href: "https://gemini-website-generator.vercel.app",
+  //   image: "/images/ai-web.png",
+  //   title: "AI Website Builder",
+  //   description:
+  //     "An AI website builder that takes and generates webpage using Gemini API",
+  // },
   {
     href: "https://quick-task-python-service.onrender.com",
     image: "/images/quick.jpg",
     title: "Quick Task Manager",
-    description: "A Notes Taking App to manage and monitor your routine using a Python Microservice",
+    description:
+      "A Notes Taking App to manage and monitor your routine using a Python Microservice",
   },
 ];
 

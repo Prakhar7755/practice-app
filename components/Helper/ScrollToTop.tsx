@@ -35,8 +35,10 @@ const ScrollToTop = () => {
           : "opacity-0 translate-y-4 pointer-events-none"
       }`}
       style={{
-        background: 'linear-gradient(135deg, #1e40af, #6d28d9)',
-        boxShadow: isVisible ? '0 0 20px rgba(103, 232, 249, 0.2), 0 0 40px rgba(103, 232, 249, 0.1)' : 'none',
+        background: "linear-gradient(135deg, #1e40af, #6d28d9)",
+        boxShadow: isVisible
+          ? "0 0 20px rgba(103, 232, 249, 0.2), 0 0 40px rgba(103, 232, 249, 0.1)"
+          : "none",
       }}
     >
       <FaArrowUp className="w-4 h-4" />

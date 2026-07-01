@@ -89,8 +89,8 @@ const Contact = () => {
             </h2>
 
             <p className="text-gray-400 mt-4 leading-relaxed">
-              I&apos;m currently setting up a secure contact system. For now, feel free
-              to reach out directly via email.
+              I&apos;m currently setting up a secure contact system. For now,
+              feel free to reach out directly via email.
             </p>
 
             <a
