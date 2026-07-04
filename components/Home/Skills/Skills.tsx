@@ -89,7 +89,7 @@ const Skills = () => {
             <h2 className="text-xl md:text-2xl font-semibold text-center mb-8">
               <span className="relative inline-block">
                 <span className="text-gray-200">{category.title}</span>
-                <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full" />
+                <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-linear-to-r from-cyan-400 to-purple-500 rounded-full" />
               </span>
             </h2>
 

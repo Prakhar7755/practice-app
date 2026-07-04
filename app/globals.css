@@ -14,6 +14,58 @@
   --gradient-accent: linear-gradient(135deg, #67e8f9, #a78bfa);
   --gradient-accent-reverse: linear-gradient(135deg, #a78bfa, #67e8f9);
   --gradient-bg: linear-gradient(180deg, #09091b 0%, #0d0e26 50%, #0f0a2e 100%);
+  --nav-bg: rgba(9, 9, 27, 0.8);
+  --mobile-nav-bg: linear-gradient(135deg, rgba(9,9,27,0.95), rgba(15,10,46,0.95));
+}
+
+.light {
+  /* Dynamic Background and Accents */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --accent-cyan: #0891b2;
+  --accent-purple: #7c3aed;
+  --accent-blue: #2563eb;
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(15, 23, 42, 0.08);
+  --glow-cyan: 0 0 20px rgba(8, 145, 178, 0.12);
+  --glow-purple: 0 0 20px rgba(124, 58, 237, 0.12);
+  --gradient-accent: linear-gradient(135deg, #0891b2, #7c3aed);
+  --gradient-accent-reverse: linear-gradient(135deg, #7c3aed, #0891b2);
+  --gradient-bg: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
+  --nav-bg: rgba(248, 250, 252, 0.85);
+  --mobile-nav-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(240, 244, 255, 0.98));
+
+  /* Tailwind CSS Token Overrides for Light Mode */
+  --color-white: #0f172a; /* Slate 900 */
+  --color-gray-50: #0f172a;
+  --color-gray-100: #1e293b; /* Slate 800 */
+  --color-gray-200: #334155; /* Slate 700 */
+  --color-gray-300: #475569; /* Slate 600 */
+  --color-gray-400: #64748b; /* Slate 500 */
+  --color-gray-500: #94a3b8; /* Slate 400 */
+  --color-gray-600: #cbd5e1; /* Slate 300 */
+  
+  --color-cyan-200: #0e7490;
+  --color-cyan-300: #0891b2;
+  --color-cyan-400: #0284c7;
+  --color-cyan-500: #0369a1;
+}
+
+/* Reset colors for dark elements in light mode */
+.light .gradient-btn,
+.light .gradient-btn *,
+.light .bg-blue-950,
+.light .bg-blue-950 *,
+.light .bg-linear-to-br,
+.light .bg-linear-to-br *,
+.light button.fixed,
+.light button.fixed * {
+  --color-white: #ffffff !important;
+  --color-gray-100: #f3f4f6 !important;
+  --color-gray-200: #e5e7eb !important;
+  --color-gray-300: #d1d5db !important;
+  --color-gray-400: #9ca3af !important;
+  --color-gray-500: #6b7280 !important;
 }
 
 /* ========== SCROLLBAR ========== */

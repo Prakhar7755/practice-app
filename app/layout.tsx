@@ -23,11 +23,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var theme = localStorage.getItem('theme') || 'dark';
+                  if (theme === 'light') {
+                    document.documentElement.classList.add('light');
+                  } else {
+                    document.documentElement.classList.remove('light');
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
       <body
         className={`${font.className} scrollbar-hide antialiased`}
         style={{
-          background:
-            "linear-gradient(180deg, #09091b 0%, #0d0e26 40%, #0f0a2e 100%)",
+          background: "var(--gradient-bg)",
         }}
       >
         <ResponsiveNav />
